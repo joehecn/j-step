@@ -6,10 +6,12 @@
   "author": "joehecn <leanbrown@live.cn>",
   "license": "MIT",
   "scripts": {
-    "dev": "electron-webpack dev"
+    "dev": "electron-webpack dev",
+    "build": "electron-webpack && electron-builder"
   },
   "devDependencies": {
     "electron": "^2.0.5",
+    "electron-builder": "^20.26.1",
     "electron-webpack": "^2.1.2",
     "webpack": "^4.16.3"
   },
