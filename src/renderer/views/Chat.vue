@@ -2,7 +2,7 @@
   <div id="chat">
     <el-tabs v-model="activeName">
       <el-tab-pane label="发消息" name="F">
-        发消息
+        <send-message></send-message>
       </el-tab-pane>
       <el-tab-pane label="联系人" name="M">
         <chat-list></chat-list>
@@ -12,9 +12,11 @@
 </template>
 
 <script>
+import SendMessage from '@/components/SendMessage.vue'
 import ChatList from '@/components/ChatList.vue'
 export default {
   components: {
+    'send-message': SendMessage,
     'chat-list': ChatList
   },
   data () {

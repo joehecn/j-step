@@ -1,5 +1,9 @@
 
-import { TabPane, Tabs } from 'element-ui'
+import {
+  Button,
+  Input,
+  TabPane,
+  Tabs } from 'element-ui'
 import Vue from 'vue'
 import Router from 'vue-router'
 import routerConfig from './router/router-config.js'
@@ -9,6 +13,8 @@ Vue.use(Router)
 
 const router = new Router(routerConfig)
 
+Vue.component(Button.name, Button)
+Vue.component(Input.name, Input)
 Vue.component(TabPane.name, TabPane)
 Vue.component(Tabs.name, Tabs)
 
