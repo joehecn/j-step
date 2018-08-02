@@ -5,14 +5,18 @@
         发消息
       </el-tab-pane>
       <el-tab-pane label="联系人" name="M">
-        联系人
+        <chat-list></chat-list>
       </el-tab-pane>
     </el-tabs>
   </div>
 </template>
 
 <script>
+import ChatList from '@/components/ChatList.vue'
 export default {
+  components: {
+    'chat-list': ChatList
+  },
   data () {
     return {
       activeName: 'M'
